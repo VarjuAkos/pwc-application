@@ -1,0 +1,81 @@
+[Sarah Chen]: Good morning, everyone! Welcome to our Daily Scrum for June 11th, 2024. I hope you're all feeling energized and ready to tackle another day on our HealthTrack Pro project. Let's dive right in and get everyone up to speed on our progress since yesterday's sprint planning. Remember, we're aiming to keep this to about 30 minutes, so let's try to be concise but informative. First, I'd like to give a quick reminder of our Sprint 1 goals and timeline. We're focusing on setting up our development environment, implementing basic user authentication and profile management, and starting work on the activity tracking module. We have two weeks for this sprint, ending on June 24th. Now, let's go around and hear from each of you. Alex, would you like to start us off?
+
+[Alex Rodriguez]: Sure thing, Sarah. Thanks. Good morning, everyone. I've been focusing on setting up our development environment and making some key technical architecture decisions. We've successfully set up our React.js frontend and Node.js backend environments. I've also initialized our PostgreSQL database. There were a few hiccups with version compatibilities, but I've resolved those. On the architecture front, I've drafted a preliminary system design document that outlines our microservices structure and API gateway setup. I'd like to review this with Michael later today if possible. As for challenges, I'm a bit concerned about our approach to handling real-time data for the activity tracking module. I think we might need to consider incorporating WebSocket technology for more efficient data streaming. That's all from me for now.
+
+[Sarah Chen]: Thanks, Alex. That's great progress on the environment setup. We'll definitely need to discuss that real-time data concern. Michael, do you have time to review the system design with Alex today?
+
+[Michael Kim]: Absolutely, Sarah. I can make time this afternoon.
+
+[Sarah Chen]: Perfect. Emily, how about you? What's your status on the frontend work?
+
+[Emily Watson]: Good morning, everyone. I've made significant progress on the User Authentication UI implementation. The login and registration forms are nearly complete, and I've started working on the basic layout for the user profile page. I've run into a small challenge with state management in React, particularly when it comes to handling form validation errors. I might need to consult with Alex on this later. Also, I've noticed that our current component structure might lead to some performance issues as we scale. I'm thinking we might need to implement React.lazy for code splitting sooner rather than later. Otherwise, the React setup is going smoothly, and I'm on track to have a functional UI for user authentication by the end of the week.
+
+[Sarah Chen]: That's great progress, Emily. Definitely touch base with Alex on those React issues. Michael, what's your status on the backend work?
+
+[Michael Kim]: Morning, all. On my end, I've been working on the User Authentication backend. I've set up the basic Express.js server structure and implemented JSON Web Token (JWT) authentication. The user registration endpoint is functional, and I'm currently working on the login endpoint. I've also started designing the database schema for user profiles. I'm considering using PostgreSQL's JSONB data type for storing some of the more flexible user data, but I'd like to discuss this approach with Alex during our review later. One challenge I'm facing is how to handle password reset functionality securely. I'm researching best practices for this and might need some input from the team.
+
+[Sarah Chen]: Thanks, Michael. The password reset functionality is crucial, so let's make sure we implement that securely. Olivia, how's the QA and DevOps setup coming along?
+
+[Olivia Martinez]: Good morning, everyone. I've made progress on setting up our CI/CD pipeline. I've configured Jenkins for continuous integration and am working on setting up automated deployments to our AWS environment. I've run into a few issues with permissions in AWS, but I'm working through those. As for testing, I've decided to go with Jest for unit testing and Cypress for end-to-end testing. I've set up the basic testing framework and written a few initial tests for the user registration process. I'm also working on setting up code coverage reports. One concern I have is about our approach to integration testing, especially considering our microservices architecture. We might need to discuss strategies for effective integration testing in this context.
+
+[Sarah Chen]: Great work, Olivia. That integration testing concern is definitely something we should address. Let's schedule a separate meeting to discuss testing strategies in depth. Liam, how about you? How are the designs coming along?
+
+[Liam Foster]: Morning, team. I've made good progress on the User Profile Management designs. I've completed the high-fidelity mockups for the profile view and edit pages, and I'm currently working on the interaction design for the profile settings section. I've been using our new design system in Figma, which is speeding up the process significantly. I do have a question about the profile picture upload feature - I'm not sure if we want to include cropping functionality in the MVP. It would enhance the user experience, but I'm aware it might add complexity to the development. I'd love to get some feedback on this from the dev team.
+
+[Sarah Chen]: Thanks, Liam. That's a good question about the profile picture feature. Let's quickly get some thoughts on that. Alex or Emily, any quick input on the feasibility of including a cropping feature?
+
+[Alex Rodriguez]: From a technical standpoint, we could implement a basic cropping feature without too much overhead. There are some good React libraries we could use. However, we'd need to consider the impact on our timeline.
+
+[Emily Watson]: I agree with Alex. It's doable, but we'd need to weigh it against other priorities. Maybe we could implement a simple version for the MVP and enhance it later?
+
+[Sarah Chen]: Thanks for that input. Liam, why don't you mock up both versions - one with and one without cropping - and we can make a decision in our next sprint planning based on our progress?
+
+[Liam Foster]: Sounds good, Sarah. I'll work on both versions.
+
+[Sarah Chen]: Great. Now, let's quickly review our sprint backlog. It looks like we're making good progress on the User Authentication and Profile Management user story. The Activity Tracking module is still marked as 'Not Started'. Alex and Emily, do you think we'll be able to start on this by the end of the week?
+
+[Alex Rodriguez]: I think it's possible. Once we finalize the user authentication, we should be able to start on the activity tracking frontend and backend components.
+
+[Emily Watson]: Agreed. I should be ready to start on the activity tracking UI by Friday.
+
+[Sarah Chen]: Excellent. Now, are there any blockers or challenges anyone wants to bring up that we haven't already discussed?
+
+[Michael Kim]: I have one concern. We need to ensure our data handling complies with health data regulations. I'm not sure if we need to implement any special measures for HIPAA compliance at this stage.
+
+[Sarah Chen]: That's an important point, Michael. Let's schedule a separate meeting to discuss compliance requirements. I'll invite our legal advisor to join us. Anyone else?
+
+[Olivia Martinez]: Just a quick note - we might need to upgrade our AWS instance soon to handle the increased load as we add more features.
+
+[Sarah Chen]: Thanks for flagging that, Olivia. Can you put together a quick proposal for the upgrade? We'll review it in our next sprint planning.
+
+[Olivia Martinez]: Sure, I'll have that ready by next week.
+
+[Sarah Chen]: Great. Now, let's quickly touch on some additional tasks. Olivia, have you had a chance to order those new desk lamps for the design team?
+
+[Olivia Martinez]: Yes, I placed the order yesterday. They should arrive by the end of the week.
+
+[Sarah Chen]: Perfect. Alex, any update on coordinating the window cleaning service?
+
+[Alex Rodriguez]: I've reached out to three services and I'm waiting for quotes. I should have a decision by tomorrow.
+
+[Sarah Chen]: Sounds good. Liam, how about the Figma enterprise subscription update?
+
+[Liam Foster]: I've submitted the renewal request. We're just waiting for finance approval, which should come through by Friday.
+
+[Sarah Chen]: Great. Emily, any progress on scheduling the monitor calibration for the design team?
+
+[Emily Watson]: Yes, I've scheduled it for next Tuesday morning. The technician will be here at 9 AM.
+
+[Sarah Chen]: Excellent. And Michael, have you had a chance to update the emergency contact list?
+
+[Michael Kim]: I've collected all the updated information. I'll have the new list posted in the break room by the end of today.
+
+[Sarah Chen]: Fantastic. Thank you all for staying on top of these additional tasks. They're important for keeping our work environment running smoothly. Now, to wrap up, let's recap our key points and action items. We're making good progress on our sprint goals, particularly with the user authentication and profile management. We need to keep an eye on our timeline for starting the activity tracking module. Alex and Michael will be reviewing the system design this afternoon. Emily and Alex will discuss React state management and performance optimization. We'll have a separate meeting to discuss testing strategies and another for compliance requirements. Olivia will prepare a proposal for our AWS upgrade. Does anyone have any final thoughts or questions before we conclude?
+
+[Alex Rodriguez]: Just a quick reminder to everyone - let's make sure we're pushing our code regularly and keeping our documentation up to date as we go.
+
+[Sarah Chen]: Excellent point, Alex. Thank you for that reminder. If there's nothing else, let's get back to work. Remember, our sprint goal is to have a basic working prototype of user authentication and profile management by the end of next week. Keep up the great work, everyone, and don't hesitate to reach out if you run into any issues. Our next Daily Scrum will be tomorrow at the same time. Thank you all!
+
+[All]: Thank you, Sarah!
+
+FINISHED
